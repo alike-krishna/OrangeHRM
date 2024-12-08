@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-08T12:12:11 IST" name="Default suite" finished-at="2024-12-08T12:12:27 IST" duration-ms="16050">
+    <groups>
+      <group name="loginRequired">
+        <method signature="LoginTest.validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@4470fbd6]" name="validLoginTest" class="com.orangehrm.tests.LoginTest"/>
+      </group> <!-- loginRequired -->
+    </groups>
+    <test started-at="2024-12-08T12:12:11 IST" name="Default test" finished-at="2024-12-08T12:12:27 IST" duration-ms="16050">
+      <class name="com.orangehrm.genericPage.MasterPage">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.genericPage.MasterPage@49c90a9c]" started-at="2024-12-08T12:12:27 IST" name="tearDown" finished-at="2024-12-08T12:12:27 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.genericPage.MasterPage -->
+      <class name="com.orangehrm.tests.DashboardTest">
+        <test-method is-config="true" signature="loadProperties()[pri:0, instance:com.orangehrm.tests.DashboardTest@147e2ae7]" started-at="2024-12-08T12:12:22 IST" name="loadProperties" finished-at="2024-12-08T12:12:22 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadProperties -->
+        <test-method is-config="true" signature="initializeWebDriver()[pri:0, instance:com.orangehrm.tests.DashboardTest@147e2ae7]" started-at="2024-12-08T12:12:22 IST" name="initializeWebDriver" finished-at="2024-12-08T12:12:24 IST" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method signature="logoutTest()[pri:0, instance:com.orangehrm.tests.DashboardTest@147e2ae7]" started-at="2024-12-08T12:12:24 IST" name="logoutTest" depends-on-groups="loginRequired" finished-at="2024-12-08T12:12:27 IST" duration-ms="2960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+      </class> <!-- com.orangehrm.tests.DashboardTest -->
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method is-config="true" signature="loadProperties()[pri:0, instance:com.orangehrm.tests.LoginTest@4470fbd6]" started-at="2024-12-08T12:12:11 IST" name="loadProperties" finished-at="2024-12-08T12:12:11 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadProperties -->
+        <test-method is-config="true" signature="initializeWebDriver()[pri:0, instance:com.orangehrm.tests.LoginTest@4470fbd6]" started-at="2024-12-08T12:12:11 IST" name="initializeWebDriver" finished-at="2024-12-08T12:12:20 IST" duration-ms="8799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.orangehrm.tests.LoginTest@4470fbd6]" started-at="2024-12-08T12:12:20 IST" name="validLoginTest" finished-at="2024-12-08T12:12:22 IST" duration-ms="1618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
