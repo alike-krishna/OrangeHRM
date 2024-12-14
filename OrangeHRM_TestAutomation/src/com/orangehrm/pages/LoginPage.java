@@ -45,6 +45,6 @@ public class LoginPage extends CommonMethods {
 
     // Check for error message after invalid login attempt
     public void checkErrorMessage() {
-        errorMessage("ErrorMessageDisplay", "ErrorMessage");  // Verifying error message display
+        errorMessage("InvalidUser", "ErrorMessage");  //locators.proprties,testdata.proprties
     }
 }

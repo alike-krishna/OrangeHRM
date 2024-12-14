@@ -23,6 +23,7 @@ public class MasterPage {
         // Initialize properties
     	loadProperties();
     }
+    
     @BeforeClass
     public void loadProperties() throws Exception {
         // Load configuration properties
@@ -66,7 +67,7 @@ public class MasterPage {
                 throw new IllegalStateException("No driver found for specified browser in configuration.");
             }
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
         driver.get(config.getProperty("url"));
     }

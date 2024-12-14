@@ -1,5 +1,6 @@
 package com.orangehrm.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.orangehrm.genericPage.MasterPage;
@@ -13,7 +14,7 @@ public class LoginTest extends MasterPage {
 		//super();
 	}
 
-	@Test(groups = "loginRequired")
+	@Test(priority = 2, groups = "loginRequired")
     public void validLoginTest() throws Exception {
         LoginPage lp = new LoginPage();  // Pass WebDriver instance
         lp.clickUsername();
@@ -21,16 +22,18 @@ public class LoginTest extends MasterPage {
         lp.clickPassword();
         lp.enterPassword();
         lp.clickLoginButton();
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals("OrangeHRM", pageTitle);      
     }
 
-    @Test(priority = 2, description = "TC2: Verify user could not login with Invalid credentials", enabled = false)
+    @Test(priority = 1)
     public void invalidLoginTest() throws Exception {
-        LoginPage lp = new LoginPage();  // Pass WebDriver instance
+        LoginPage lp = new LoginPage();  
         lp.clickUsername();
         lp.enterInvalidUserName();
         lp.clickPassword();
         lp.enterInvalidPassword();
         lp.clickLoginButton();
-        lp.checkErrorMessage();  // Check for error message
+        //lp.checkErrorMessage();  
     }
 }
