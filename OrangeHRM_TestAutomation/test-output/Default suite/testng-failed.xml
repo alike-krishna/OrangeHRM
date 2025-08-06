@@ -5,10 +5,10 @@
     <classes>
       <class name="com.orangehrm.tests.LoginTest">
         <methods>
+          <include name="validLoginTest"/>
           <include name="initializeWebDriver"/>
           <include name="loadProperties"/>
           <include name="tearDown"/>
-          <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- com.orangehrm.tests.LoginTest -->
     </classes>

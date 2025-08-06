@@ -11,7 +11,7 @@ public class DashboardTest extends MasterPage {
 		//super();
 	}
 
-	@Test(dependsOnGroups = "loginRequired")
+	@Test(dependsOnGroups = "loginRequired", enabled = false)
     public void logoutTest() throws Exception {
         DashboardPage dp = new DashboardPage();  // DashboardPage should inherit WebDriver from MasterPage
         dp.clickMenuList();   

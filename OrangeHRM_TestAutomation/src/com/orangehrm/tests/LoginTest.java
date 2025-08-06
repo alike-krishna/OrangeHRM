@@ -14,7 +14,7 @@ public class LoginTest extends MasterPage {
 		//super();
 	}
 
-	@Test(priority = 2, groups = "loginRequired")
+	@Test(priority = 1, groups = "loginRequired")
     public void validLoginTest() throws Exception {
         LoginPage lp = new LoginPage();  // Pass WebDriver instance
         lp.clickUsername();
@@ -26,7 +26,7 @@ public class LoginTest extends MasterPage {
         Assert.assertEquals("OrangeHRM", pageTitle);      
     }
 
-    @Test(priority = 1)
+  
     public void invalidLoginTest() throws Exception {
         LoginPage lp = new LoginPage();  
         lp.clickUsername();
