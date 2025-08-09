@@ -43,7 +43,7 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.10.1</version>
-      <scope>test</scope>
+      <!-- Remove the <scope>test</scope> line -->
     </dependency>
 
     <!-- Apache POI -->
